@@ -8,7 +8,7 @@ namespace Avanade.SubTCSE.Projeto.Application.Services.EmployeeRole
     public class EmployeeRoleService : IEmployeeRoleAppServie
     {
 
-        Task<EmployeeRoleDTO> IEmployeeRoleAppServie.AddEmployeeRole(EmployeeRoleDto employeeRoleDto)
+        Task<EmployeeRoleDTO> IEmployeeRoleAppServie.AddEmployeeRole(EmployeeRoleDTO employeeRoleDto)
         {
             throw new NotImplementedException();
         }
