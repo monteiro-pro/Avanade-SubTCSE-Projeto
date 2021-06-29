@@ -5,14 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Aggregates\Employee\Interfaces\Repositories\**" />
-    <EmbeddedResource Remove="Aggregates\Employee\Interfaces\Repositories\**" />
-    <None Remove="Aggregates\Employee\Interfaces\Repositories\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Aggregates\Employee\ValueObject\" />
-    <Folder Include="Aggregates\Employee\Validators\" />
   </ItemGroup>
 
   <ItemGroup>

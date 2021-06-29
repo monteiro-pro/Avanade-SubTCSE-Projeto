@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Avanade.SubTCSE.Projeto.Application.DTOs.Base;
+using System;
 
 namespace Avanade.SubTCSE.Projeto.Application.DTOs.Employee
 {
-    class EmployeeDTO
+    public class EmployeeDTO : BaseDTO
     {
+        public string PrimeiroNome { get; set; }
+
+        public string Sobrenome { get; set; }
+
+        public DateTime Aniversario { get; set; }
+
+        public bool Ativo { get; set; }
+
+        public decimal Salario { get; set; }
+
+        public EmployeeRole.EmployeeRoleDto Cargo { get; set; }
     }
 }

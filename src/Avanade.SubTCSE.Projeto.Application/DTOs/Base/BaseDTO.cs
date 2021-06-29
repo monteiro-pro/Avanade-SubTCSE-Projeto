@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Avanade.SubTCSE.Projeto.Application.DTOs.Base
+﻿namespace Avanade.SubTCSE.Projeto.Application.DTOs.Base
 {
-    class BaseDTO
+    public abstract class BaseDTO
     {
+        public string Identificador { get; set; }
     }
 }

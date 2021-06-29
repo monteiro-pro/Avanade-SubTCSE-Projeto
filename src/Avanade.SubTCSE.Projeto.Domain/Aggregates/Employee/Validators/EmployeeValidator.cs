@@ -1,12 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Validators;
+using FluentValidation;
 
 namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Validators
 {
-    class EmployeeValidator
+    public class EmployeeValidator : AbstractValidator<Entities.Employee>
     {
+        public EmployeeValidator()
+        {
+            RuleSet("", () =>
+            {
+                RuleFor(e => e.FirstName)
+                .NotEmpty()
+                .WithMessage("{PropertyName} can not be empty");
+            });
+
+            RuleSet("", () =>
+            {
+                RuleFor(e => e.SurName)
+                .NotEmpty()
+                .WithMessage("{PropertyName} can not be empty");
+            });
+
+            RuleFor(e => e.EmployeeRole)
+                .SetValidator(new EmployeeRoleValidator());
+        }
     }
+}
 }
