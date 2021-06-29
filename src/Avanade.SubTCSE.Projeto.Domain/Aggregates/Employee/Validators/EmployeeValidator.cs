@@ -26,4 +26,3 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Validators
         }
     }
 }
-}

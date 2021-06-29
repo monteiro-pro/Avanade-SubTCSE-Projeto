@@ -15,6 +15,6 @@ namespace Avanade.SubTCSE.Projeto.Application.DTOs.Employee
 
         public decimal Salario { get; set; }
 
-        public EmployeeRole.EmployeeRoleDto Cargo { get; set; }
+        public EmployeeRole.EmployeeRoleDTO Cargo { get; set; }
     }
 }

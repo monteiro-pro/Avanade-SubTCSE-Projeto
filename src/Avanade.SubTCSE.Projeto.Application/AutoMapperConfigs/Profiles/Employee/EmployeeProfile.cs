@@ -13,8 +13,8 @@ namespace Avanade.SubTCSE.Projeto.Application.AutoMapperConfigs.Profiles.Employe
                         firstName: ctor.PrimeiroNome,
                         surName: ctor.Sobrenome,
                         birthday: ctor.Aniversario,
-                        ctor.Ativo,
-                        ctor.Salario,
+                        active: ctor.Ativo,
+                        salary: ctor.Salario,
                         employeeRole: res.Mapper.Map<Domain.Aggregates.EmployeeRole.Entities.EmployeeRole>(ctor.Cargo));
                 })
                 .ForAllOtherMembers(i => i.Ignore());
