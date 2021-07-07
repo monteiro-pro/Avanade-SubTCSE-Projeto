@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Avanade.SubTCSE.Projeto.Data.Repositories.Employee
 {
-    public class EmployeeRepository : BaseRepository<Domain.Aggregates.EmployeeRole.Entities.EmployeeRole, string>, 
+    public class EmployeeRepository : BaseRepository<Domain.Aggregates.Employee.Entities.Employee, string>, IEmployeeRepository 
     {
 
     }
